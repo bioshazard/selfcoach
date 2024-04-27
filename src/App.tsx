@@ -26,7 +26,7 @@ function App() {
   }, [dialog])
   
   return (
-    <div className="h-screen flex justify-center items-center bg-gray-100 p-4">
+    <div className="h-dvh flex justify-center items-center bg-gray-100 p-4">
       <div className="w-full h-full max-w-lg bg-white shadow-sm p-4 rounded flex flex-col gap-4">
         <h1 className="text-3xl font-bold text-gray-800 text-center flex flex-row gap-2 justify-center">
           <span className={role == "self" ? "underline" : ""}>Self</span>
@@ -74,7 +74,8 @@ function App() {
                   (event.target as HTMLFormElement).value = "";
                 }
               }}
-              className="w-full h-60 bg-gray-100 p-4 mb-2 shadow-md rounded text-gray-600"
+              className="w-full bg-gray-100 p-4 mb-2 shadow-md rounded text-gray-600"
+              rows={2}
               placeholder="Type your message..."
               name="message"
             />
